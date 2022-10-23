@@ -17,8 +17,6 @@ header {
 /* -----------------------middle--------------------- */
 
 #middle {
-    background-color: antiquewhite;
-    border: 2px solid red;
     display: flex;
     padding-left: 50px;
     padding-right: 50px;
@@ -28,7 +26,7 @@ header {
 
 #middle #first-column {
     display: flex;
-    border: 1px solid green;
+    
     flex: auto;
     flex-direction: column;
     align-items: center;
@@ -50,13 +48,12 @@ header {
 
     
 }
-#middle #second-column #score {
+#middle #second-column #score-board {
     display: flex;
     align-items: center;
     flex-direction: column;
-    
-    border: 1px solid rebeccapurple;
     margin-top: 155px;
+    gap: 30px;
 }
 
 #middle #second-column h1 {
@@ -68,13 +65,13 @@ header {
 #middle #second-column button {
     height: 200px;
     width: 200px;
-    margin-top: 40px;
+    margin-top: 10px;
 
 }
 
 #middle #third-column {
     display: flex;
-    border: 1px solid green;
+    
     flex: auto;
     align-items: center;
     flex-direction: column;

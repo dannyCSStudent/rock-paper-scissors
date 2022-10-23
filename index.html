@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="./script.js"></script> -->
+    <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./styles.css">
     <title>Rock Paper Scissors</title>
 </head>
@@ -16,27 +16,27 @@
         <div id="middle">
             <div id="first-column">
                 
-                <h1>
-                    LOSER
+                <h1 id="player-board">
+                    You
                 </h1>
-                <button type="button" id="button-one">Rock</button>
-                <button type="button" id="button-two">Paper</button>
-                <button type="button" id="button-three">Scissors</button>
+                <button type="button" id="rock">Rock</button>
+                <button type="button" id="paper">Paper</button>
+                <button type="button" id="scissors">Scissors</button>
                 
             </div>
             <div id="second-column">
-                <h1>Play 5 Rounds</h1>
-                <div id="score">
-                    <h2>Round: 0</h2>
-                    <h1>0 - 0</h1>
+                <h1 id="game-label">Play 5 Rounds</h1>
+                <div id="score-board">
+                    <h2 id="round">Round: 0</h2>
+                    <h1 id="score">0 - 0</h1>
                 </div>
-                <button type="button" id="play">Play</button>
+                <button id="play">Play</button>
             </div>
             <div id="third-column">
-                <h1>
-                    LOSER
+                <h1 id="computer-board">
+                    Computer
                 </h1>
-                <button type="button" id="computer">Scissors</button>
+                <button type="button" id="computer"></button>
 
             </div>
         </div>
