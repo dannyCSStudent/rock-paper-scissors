@@ -58,9 +58,8 @@ function updateScore(player) {
         document.getElementById("score").textContent = `${playerCount} - ${computerCount}`;
         document.getElementById("player-board").textContent = "Tie";
         document.getElementById("computer-board").textContent = "Tie";
-        
     }
-    if (gameCount === 5) {
+    if (playerCount === 5 || computerCount === 5) {
         disableButtons();
         document.getElementById("game-label").textContent = "Game Over";
         document.getElementById("play").textContent = "Play Again";
@@ -95,12 +94,10 @@ function reset() {
 
 function play() {
     document.getElementById("play").disabled = true;
-    
     document.getElementById("rock").disabled = false;
     document.getElementById("paper").disabled = false;
     document.getElementById("scissors").disabled = false;
     document.getElementById("game-label").textContent = "Play 5 Round";
-
     document.getElementById("round").textContent = "Round: 1";
     document.getElementById("player-board").textContent = "You";
     document.getElementById("computer-board").contains = "Computer";
@@ -108,9 +105,6 @@ function play() {
     document.getElementById("paper").style.border = "2px solid green";
     document.getElementById("scissors").style.border = "2px solid green";
 }
-
-
-
 
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissors"];
@@ -126,11 +120,7 @@ function clearCounters() {
     roundCount = 0;
 }
 
-
-
-
 function playRound(PlayerSelection, ComputerSelection) {
-
     if (PlayerSelection === "rock" && ComputerSelection === "paper") {
         return true;
     }
@@ -153,4 +143,5 @@ function playRound(PlayerSelection, ComputerSelection) {
     }
 
 }
+
 disableButtons();
