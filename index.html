@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <title>Rock Paper Scissors</title>
+    <style>
+        #container {
+            font-family: "Audiowide", sans-serif;
+        }
+    </style>
 </head>
 <body>
     <div id="container">
@@ -16,7 +23,7 @@
         <div id="middle">
             <div id="first-column">
                 
-                <h1 id="player-board">
+                <h1 id="player">
                     You
                 </h1>
                 <button type="button" id="rock">Rock</button>
@@ -26,17 +33,15 @@
             </div>
             <div id="second-column">
                 <h1 id="game-label">Win 5 Rounds</h1>
-                <div id="score-board">
-                    <h2 id="round">Round: 0</h2>
-                    <h1 id="score">0 - 0</h1>
-                </div>
-                <button id="play">Play</button>
+                <h1 id="score">0 - 0</h1>
+            
+                <button type="button" id="play">Play</button>
             </div>
             <div id="third-column">
-                <h1 id="computer-board">
+                <h1 id="computer">
                     Computer
                 </h1>
-                <button type="button" id="computer">Scissors</button>
+                <button type="button" id="computer-pick">Thinking</button>
 
             </div>
         </div>

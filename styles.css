@@ -2,11 +2,17 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
 }
 
 #container {
     display: flex;
+    
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    color:  aquamarine;
+    
+    
 }
 
 header {
@@ -32,42 +38,50 @@ header {
     align-items: center;
 }
 
-#middle #first-column button {
-    min-height: 200px;
-    min-width: 200px;
+button {
+    height: 200px;
+    width: 200px;
     margin: 20px;
+    background-color: transparent;
+    font-size: 40px;
+    border-radius: 35px;
+    font-family: "Audiowide", sans-serif;
+    color: aquamarine
 }
+
+#middle #first-column img {
+    height: inherit;
+    width: inherit;
+}
+/* ------------------------------------------------------ */
 
 #middle #second-column {
     display: flex;
-    border: 1px solid green;
-    flex: auto;
+    
     flex-direction: column;
     align-items: center;
-    
 
-    
-}
-#middle #second-column #score-board {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 155px;
-    gap: 30px;
-}
-
-#middle #second-column h1 {
-    
+    gap: 75px;
 
     
 }
 
-#middle #second-column button {
+#middle #second-column #score {
+    font-size: 70px;    
+}
+
+/* #middle #second-column button {
     height: 200px;
     width: 200px;
-    margin-top: 10px;
+    border-radius: 35px;
+    background-color: transparent;
+    font-size: 40px;
+} */
 
-}
+/* #middle #second-column img {
+    height: inherit;
+    width: inherit;
+} */
 
 #middle #third-column {
     display: flex;
@@ -75,15 +89,18 @@ header {
     flex: auto;
     align-items: center;
     flex-direction: column;
-    gap: 260px  ;
+    gap: 240px  ;
 }
 
-#middle #third-column button {
+/* #middle #third-column button {
     height: 200px;
     width: 200px;
+    background-color: transparent;
+    font-size: 40px;
+    border-radius: 35px;
 
 
-}
+} */
 
 #page-footer {
     display: flex;
